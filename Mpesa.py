@@ -206,11 +206,11 @@ def myAccountDetails(): # a function to check account details
     elif wayToPrint == 2:
         ctx = ssl.create_default_context()
         receiver = input('enter your email address please...e.g: user1@example.com:\n')
-        sender = '******' # sender's email goes here
-        password = '*************' # app password as provided by google two-step auth goes here... cant share due to security reasons
+        sender = '**' # sender's email goes here
+        password = '**' # app password as provided by google two-step auth goes here... cant share due to security reasons
         content = '\n'+'\n\n'.join(data['Transaction_history'][::-1]) 
         message = f"""\
-            From: "Simon-Muthungu" <henrymsechu1@gmail.com>
+            From: "Simon-Muthungu" <sender email*>
             To: "You my friend" <receiveradress@host.com>
             Subject: Here's youre transaction history as per Simons app...
             {content}
